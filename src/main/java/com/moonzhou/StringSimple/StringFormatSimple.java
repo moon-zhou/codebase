@@ -8,6 +8,9 @@ import java.util.Locale;
  * @author moon-zhou
  *
  * @since 2017-06-11
+ * 
+ * 后续可参考
+ * http://www.cnblogs.com/fsjohnhuang/p/4094777.html
  */
 public class StringFormatSimple {
 
