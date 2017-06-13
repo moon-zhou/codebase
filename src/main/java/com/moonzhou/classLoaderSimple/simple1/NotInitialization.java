@@ -1,4 +1,4 @@
-package com.moonzhou.classLoaderSimple;
+package com.moonzhou.classLoaderSimple.simple1;
 
 public class NotInitialization {
     /**
