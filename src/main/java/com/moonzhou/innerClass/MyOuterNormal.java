@@ -4,10 +4,12 @@ package com.moonzhou.innerClass;
  * 
  * inner class simple demo
  * 
+ * 常规内部类
+ * 
  * @author moon-zhou
  *
  */
-public class MyOuter {
+public class MyOuterNormal {
     private int x = 100;
 
     // 创建内部类
@@ -18,7 +20,7 @@ public class MyOuter {
             System.out.println("内部类中 String = " + y);
             System.out.println("外部类中的x = " + x);// 直接访问外部类中的实例变量x
             outerMethod();
-            System.out.println("x is " + MyOuter.this.x);
+            System.out.println("x is " + MyOuterNormal.this.x);
         }
     }
 
@@ -45,10 +47,10 @@ public class MyOuter {
     }
 
     public static void directCall() {
-        MyOuter mo = new MyOuter();
+        MyOuterNormal mo = new MyOuterNormal();
 
         // 使用外部类构造方法创建mo对象
-        MyOuter.MyInner inner = mo.new MyInner();// 常规内部类需要通过外部类的实例才能创建对象，与实例变量需要通过对象来访问相似
+        MyOuterNormal.MyInner inner = mo.new MyInner();// 常规内部类需要通过外部类的实例才能创建对象，与实例变量需要通过对象来访问相似
 
         // 创建inner对象
         inner.innerMethod();
@@ -59,9 +61,9 @@ public class MyOuter {
     }
 
     public static void indirectCall() {
-        MyOuter mo = new MyOuter();
+        MyOuterNormal mo = new MyOuterNormal();
 
-        MyOuter.MyInner inner = mo.makeInner();
+        MyOuterNormal.MyInner inner = mo.makeInner();
 
         inner.innerMethod();
 
