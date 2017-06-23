@@ -34,7 +34,7 @@ public class RegexMatchesReplace {
 
     private static void replace2() {
         String regex = "a*b";
-        String input = "aabfooaabfooabfoob";
+        String input = "aabfooaabfooabfoobcc";
         String replace = "-";
 
         Pattern p = Pattern.compile(regex);
@@ -45,6 +45,7 @@ public class RegexMatchesReplace {
         while (m.find()) {
             m.appendReplacement(sb, replace);
         }
+        System.out.println(sb.toString());
         m.appendTail(sb);
         System.out.println(sb.toString());
     }
