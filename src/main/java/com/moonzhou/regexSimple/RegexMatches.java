@@ -4,11 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * method: start end 
+ * method: start end
+ * 
  * @author moon-zhou
  *
  */
 public class RegexMatches {
+    
+    // \b    匹配一个字边界，即字与空格间的位置。例如，"er\b"匹配"never"中的"er"，但不匹配"verb"中的"er"。
     private static final String REGEX = "\\bcat\\b";
     private static final String INPUT = "cat cat cat cattie cat";
 
