@@ -22,6 +22,8 @@ public class TestMap {
          * Set<Integer> set = map.keySet(); //得到所有key的集合
          * 
          * for (Integer in : set) { String str = map.get(in); System.out.println(in + "     " + str); }
+         * 
+         * for-each循环在java 5中被引入所以该方法只能应用于java 5或更高的版本中。如果你遍历的是一个空的map对象，for-each循环将抛出NullPointerException，因此在遍历前你总是应该检查空引用。
          */
         System.out.println("第一种：通过Map.keySet遍历key和value：");
         for (Integer in : map.keySet()) {
