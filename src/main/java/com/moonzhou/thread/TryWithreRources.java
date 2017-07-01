@@ -1,4 +1,4 @@
-package com.moonzhou.threadPool;
+package com.moonzhou.thread;
 
 import java.io.FileInputStream;
 import java.io.IOException;
