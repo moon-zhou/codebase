@@ -17,6 +17,11 @@ class RunnableJob implements Runnable {
 
 }
 
+/**
+ * Waits for this thread to die.翻译过来就是等待这个线程死亡,如果join的线程不死亡,程序就会阻塞在那里.
+ * @author moon-zhou
+ *
+ */
 public class BasicTest {
     public static void main(String[] args) throws InterruptedException {
         // 初始化
