@@ -57,14 +57,16 @@ public class StringEqual {
         String str = "111";
         str += "222";
         str += "333";
-        System.out.println(str);
+        
+        Assert.assertEquals("111222333", str);
     }
     
     @Test
     public void testStringPlus2() {
         String str = "111";
         str = str.concat("222").concat("333");
-        System.out.println(str);
+        
+        Assert.assertEquals("111222333", str);
     }
     
     
