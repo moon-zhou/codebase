@@ -88,6 +88,8 @@ public class StudentEqualsTest {
     
     /**
      * 重写了equals和hashCode
+     * 
+     * stu1和stu2通过equals方法比较相等，而且返回的hashCode值一样，所以放入set集合中时只放入了一个对象。
      */
     public static void overrideAll() {
         LinkedList<StudentOverrideAll> list = new LinkedList<StudentOverrideAll>();
