@@ -4,6 +4,11 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
+/**
+ * http://blog.csdn.net/jiangwei0910410003/article/details/22739953
+ * @author moon-zhou
+ *
+ */
 public class StudentEqualsTest {
 
     public static void main(String[] args) {
