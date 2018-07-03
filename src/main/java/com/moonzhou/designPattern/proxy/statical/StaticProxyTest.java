@@ -1,4 +1,7 @@
-package com.moonzhou.designPattern.staticProxy;
+package com.moonzhou.designPattern.proxy.statical;
+
+import com.moonzhou.designPattern.proxy.HandsomeBoy;
+import com.moonzhou.designPattern.proxy.Person;
 
 /**
  * 静态代理，这个代理类也必须要实现和被代理类相同的Person接口
@@ -10,11 +13,11 @@ package com.moonzhou.designPattern.staticProxy;
  * @author moon-zhou
  *
  */
-public class ProxyTest implements Person {
+public class StaticProxyTest implements Person {
 
 	private Person o;
 
-	public ProxyTest(Person o) {
+	public StaticProxyTest(Person o) {
 		this.o = o;
 	}
 
@@ -23,7 +26,7 @@ public class ProxyTest implements Person {
 		Person s = new HandsomeBoy();
 		
 		// 创建代理类对象
-		ProxyTest proxy = new ProxyTest(s);
+		StaticProxyTest proxy = new StaticProxyTest(s);
 		
 		// 调用代理类对象的方法
 		proxy.sayHello("welcome to java", 20);

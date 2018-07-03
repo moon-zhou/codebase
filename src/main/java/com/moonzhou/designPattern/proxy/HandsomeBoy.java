@@ -1,4 +1,4 @@
-package com.moonzhou.designPattern.staticProxy;
+package com.moonzhou.designPattern.proxy;
 
 /**
  * 需要被代理的类 实现了一个接口Person

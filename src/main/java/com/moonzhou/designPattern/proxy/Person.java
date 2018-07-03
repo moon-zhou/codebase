@@ -1,4 +1,4 @@
-package com.moonzhou.designPattern.staticProxy;
+package com.moonzhou.designPattern.proxy;
 
 /**
  * 
