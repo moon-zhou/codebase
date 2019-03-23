@@ -3,6 +3,16 @@ package com.moonzhou.collectionObj;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Desc: ArrayList里存储对象测试 <br>
+ * Detail: 动态修改对象值，直接取即可生效. <br>
+ * Date: 2019年3月23日 上午10:43:13 <br>
+ * 
+ * @author moon-zhou
+ * @version 
+ * @since 2019年3月23日
+ */
 public class ListModifyTest {
     
     public void test() {
